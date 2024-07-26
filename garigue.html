@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Untitled-1</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="" class="services-link">services</a></li>
+        <li><a href="" class="contact-link">contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="content">
+      <div class="services-text">
+        <br>
+        layout design & publications <br>
+        visual strategy <br>
+        website design
+      </div>
+      <div class="contact-text">
+        <br>
+        <br>
+        <br>
+        garigue@gmail.com
+      </div>
+    </div>
+
+    <div class="main"><h1>garigue</h1></div>
+
+    <div class="spacer"></div>
+
+    <div class="footer"><footer>design studio</footer></div>
+    <script>
+      $(document).ready(function() {
+        $('.services-link').on('click', function(event) {
+          event.preventDefault();
+          if ($('.services-text').css('opacity') == '1') {
+            $('.services-text').css('opacity', '0');
+          } else {
+            $('.services-text').css('opacity', '1');
+          }
+        });
+      });
+
+      $(document).ready(function() {
+        $('.contact-link').on('click', function(event) {
+          event.preventDefault();
+          if ($('.contact-text').css('opacity') == '1') {
+            $('.contact-text').css('opacity', '0');
+          } else {
+            $('.contact-text').css('opacity', '1');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
